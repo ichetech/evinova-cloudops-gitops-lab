@@ -8,5 +8,3 @@ images:
   - name: cloudops-lab
     newName: cloudops-lab
     newTag: dev-001
-patches:
-  - path: patch-unready.yaml
