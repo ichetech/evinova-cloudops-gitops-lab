@@ -1,0 +1,15 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloudops-lab
+spec:
+  progressDeadlineSeconds: 60
+  template:
+    spec:
+      containers:
+        - name: api
+          env:
+            - name: LAB_MODE
+              value: unready
+
